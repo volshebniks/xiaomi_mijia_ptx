@@ -1,0 +1,10 @@
+{
+  "domain": "xiaomi_mijia_ptx",
+  "name": "Xiaomi mijia PTX",
+  "documentation": "https://github.com/volshebniks/xiaomi_mijia_ptx",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": [
+  	"@volshebniks"
+  ]
+}
