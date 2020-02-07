@@ -58,11 +58,11 @@ Add `xiaomi_mijia_ptx` switch in your `configuration.yaml`.
 # Example configuration.yaml entry
 
 switch:
-  - platform: xiaomi_mijia_ptx
-	  host: YOUR_DEVICE_IP_ADRESS
-	  token: YOUR_DEVICE_TOKEN
-	  model: 090615.switch.switch01
-	  name:  xiaomi_smart_switch
+  - platform: xiaomi_mijia_pt
+    host: YOUR_DEVICE_IP_ADRESS
+    token: YOUR_DEVICE_TOKEN
+    model: 090615.switch.switch01
+    name:  xiaomi_smart_switch
 ```
 
 ### CONFIGURATION PARAMETERS
