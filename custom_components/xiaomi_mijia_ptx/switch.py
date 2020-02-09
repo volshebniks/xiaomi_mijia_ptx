@@ -36,6 +36,8 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
         vol.Optional(CONF_MODEL): vol.In(
             [
                 "090615.switch.switch01",
+                "090615.switch.switch02",
+                "090615.switch.switch03",
             ]
         ),
     }
