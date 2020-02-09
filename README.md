@@ -75,4 +75,4 @@ switch:
 | `name` | No | Name switch
 
 
-Tested only with 1 key switch
+Tested with 1 key and 3 keys switch
