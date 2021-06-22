@@ -4,6 +4,7 @@
   "documentation": "https://github.com/volshebniks/xiaomi_mijia_ptx",
   "requirements": [],
   "dependencies": [],
+  "version": "0.3.1",
   "codeowners": [
   	"@volshebniks"
   ]
