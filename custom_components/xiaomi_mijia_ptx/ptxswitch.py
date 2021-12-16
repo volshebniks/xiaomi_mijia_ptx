@@ -8,17 +8,23 @@ from miio.device import Device
 _LOGGER = logging.getLogger(__name__)
 
 
-# This model name is just a guess. Please update!
 MODEL_PTX_SINGLE_WALL_SWITCH = '090615.switch.switch01'
 
-# This model name is just a guess. Please update!
 MODEL_PTX_DUAL_WALL_SWITCH = '090615.switch.switch02'
 
 MODEL_PTX_TRIPLE_WALL_SWITCH = '090615.switch.switch03'
 
+MODEL_PTX_HARD_SINGLE_WALL_SWITCH = '090615.switch.xswitch01'
+MODEL_PTX_HARD_DUAL_WALL_SWITCH = '090615.switch.xswitch02'
+MODEL_PTX_HARD_TRIPLE_WALL_SWITCH = '090615.switch.xswitch03'
+
 
 AVAILABLE_PROPERTIES = {
     MODEL_PTX_SINGLE_WALL_SWITCH: [
+        "is_on_1",
+        "switchname1"],
+    
+    MODEL_PTX_HARD_SINGLE_WALL_SWITCH: [
         "is_on_1",
         "switchname1"],
 
@@ -27,8 +33,22 @@ AVAILABLE_PROPERTIES = {
         "is_on_2",
         "switchname1",
         "switchname2"],
+    
+      MODEL_PTX_HARD_DUAL_WALL_SWITCH: [
+        "is_on_1",
+        "is_on_2",
+        "switchname1",
+        "switchname2"],
 
     MODEL_PTX_TRIPLE_WALL_SWITCH: [
+        "is_on_1",
+        "is_on_2",
+        "is_on_3",
+        "switchname1",
+        "switchname2",
+        "switchname3"],
+    
+     MODEL_PTX_HARD_TRIPLE_WALL_SWITCH: [
         "is_on_1",
         "is_on_2",
         "is_on_3",

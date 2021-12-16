@@ -38,6 +38,9 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
                 "090615.switch.switch01",
                 "090615.switch.switch02",
                 "090615.switch.switch03",
+                "090615.switch.xswitch01",
+                "090615.switch.xswitch02",
+                "090615.switch.xswitch03",
             ]
         ),
     }
@@ -81,12 +84,12 @@ async def async_setup_platform(hass, config, async_add_entities, discovery_info=
         except DeviceException:
             raise PlatformNotReady
 
-    if model in ["090615.switch.switch01"]:
+    if model in ["090615.switch.switch01","090615.switch.xswitch01"]:
         plug = PtxSwitch(host, token, model=model)
         device = XiaomiPTXSwitch(name, plug, model, unique_id, 1)
         devices.append(device)
         hass.data[DATA_KEY][host] = device
-    elif model in ["090615.switch.switch02"]:
+    elif model in ["090615.switch.switch02","090615.switch.xswitch02"]:
         plug = PtxSwitch(host, token, model=model)
         device = XiaomiPTXSwitch(name, plug, model, unique_id, 1)
         devices.append(device)
@@ -97,7 +100,7 @@ async def async_setup_platform(hass, config, async_add_entities, discovery_info=
         devices.append(device2)
         hass.data[DATA_KEY][host] = device2
 
-    elif model in ["090615.switch.switch03"]:
+    elif model in ["090615.switch.switch03","090615.switch.xswitch03"]:
         plug = PtxSwitch(host, token, model=model)
         device = XiaomiPTXSwitch(name, plug, model, unique_id, 1)
         devices.append(device)
@@ -139,7 +142,8 @@ class XiaomiPTXSwitch(SwitchDevice):
         self._icon = "mdi:power-socket"
         self._available = False
         self._state = None
-        if model in ["090615.switch.switch01", "090615.switch.switch02", "090615.switch.switch03"]:
+        if model in ["090615.switch.switch01", "090615.switch.switch02", "090615.switch.switch03",
+                        "090615.switch.xswitch01", "090615.switch.xswitch02", "090615.switch.xswitch03"]:
             self._state_attrs = {ATTR_MODEL: self._model}
 
         self._device_features = FEATURE_FLAGS_GENERIC
