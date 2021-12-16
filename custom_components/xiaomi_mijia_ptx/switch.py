@@ -3,6 +3,8 @@ import asyncio
 from functools import partial
 import logging
 
+from homeassistant.components.switch import SwitchEntity
+
 from miio import (  # pylint: disable=import-error
     Device,
     DeviceException,
@@ -128,7 +130,7 @@ async def async_setup_platform(hass, config, async_add_entities, discovery_info=
     async_add_entities(devices, update_before_add=True)
 
 
-class XiaomiPTXSwitch(SwitchDevice):
+class XiaomiPTXSwitch(SwitchEntity):
     """Representation of a Xiaomi Plug Generic."""
 
     def __init__(self, name, plug, model, unique_id, index):

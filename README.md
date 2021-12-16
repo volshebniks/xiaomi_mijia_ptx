@@ -9,8 +9,9 @@ Support for Xiaomi Miio PTX Touch Switch
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-brightgreen.svg)](https://github.com/volshebniks/xiaomi_mijia_ptx/graphs/commit-activity)
 [![GitHub issues](https://img.shields.io/github/issues/volshebniks/xiaomi_mijia_ptx)](https://github.com/volshebniks/xiaomi_mijia_ptx/issues)
 
+[![Donate](https://img.shields.io/badge/donate-Coffee-yellow.svg)](https://https://www.buymeacoffee.com/RlnBV9r)
+[![Donate](https://img.shields.io/badge/donate-Yandex-red.svg)](https://money.yandex.ru/to/41001566881198)
 
-[![Buy me a coffee](https://img.shields.io/static/v1.svg?label=Buy%20me%20a%20coffee&logo=buy%20me%20a%20coffee&logoColor=white&labelColor=ff69b4&message=donate&color=Black)](https://www.buymeacoffee.com/RlnBV9r)
 
 The 'xiaomi_mijia_ptx' component is a Home Assistant custom switch for Support for Xiaomi Miio PTX Touch Switch.
 
@@ -75,4 +76,4 @@ switch:
 | `name` | No | Name switch
 
 
-Tested only with 1 key switch
+Tested with 1 key and 3 keys switch
