@@ -72,7 +72,7 @@ switch:
 |:----------|----------|------------
 | `host` | No | Your switch ip address
 |`token` | No | Your switch secret token
-| `model` | No | May be '090615.switch.switch01' or '090615.switch.switch02' or '090615.switch.switch03'
+| `model` | No | May be '090615.switch.switch01' or '090615.switch.switch02' or '090615.switch.switch03' or '090615.switch.xswitch01' or '090615.switch.xswitch02' or '090615.switch.xswitch03'
 | `name` | No | Name switch
 
 
