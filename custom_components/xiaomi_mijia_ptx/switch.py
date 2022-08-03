@@ -11,7 +11,7 @@ from miio import (  # pylint: disable=import-error
 )
 import voluptuous as vol
 
-from homeassistant.components.switch import PLATFORM_SCHEMA, SwitchDevice
+from homeassistant.components.switch import PLATFORM_SCHEMA
 from homeassistant.const import (
     ATTR_ENTITY_ID,
     CONF_HOST,
